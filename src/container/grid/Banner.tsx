@@ -7,12 +7,16 @@ function BannerTile() {
     const QR_DEFAULT_COLOR = "white";
     const [QRColor, setQRColor] = useState(QR_DEFAULT_COLOR);
     return (
-        <Tile size="lg">
-            <div className="flex bg-black">
-                <div onClick={() => setQRColor(QR_DEFAULT_COLOR)}>
-                    <QRCode color={QRColor} />
+        <Tile span={4}>
+            <div className="bg-black">
+                <div className="mx-auto bg-black w-fit">
+                    <div className="flex  ">
+                        <div onClick={() => setQRColor(QR_DEFAULT_COLOR)}>
+                            <QRCode color={QRColor} />
+                        </div>
+                        <URLs setQRColor={setQRColor} />
+                    </div>
                 </div>
-                <URLs setQRColor={setQRColor} />
             </div>
         </Tile>
     );
