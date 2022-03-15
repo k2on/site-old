@@ -20,6 +20,12 @@ export const getArtists = (): Artist[] => [
         color: "rgb(234 179 8)",
     },
     {
+        title: "ponsuda.",
+        imageURL:
+            "https://i1.sndcdn.com/avatars-OJZMr4D5YezWb0e6-thnnuA-t500x500.jpg",
+        color: "#104db0",
+    },
+    {
         title: "DJ Smokey",
         imageURL:
             "https://i1.sndcdn.com/avatars-000548321085-9lia0v-t500x500.jpg",

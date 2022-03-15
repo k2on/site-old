@@ -18,7 +18,7 @@ function Phonk() {
     const TIMEOUT = 2000;
 
     const rotate = () => {
-        setIndex((state) => (state + 1) % 5);
+        setIndex((state) => (state + 1) % backgrounds.length);
     };
 
     const startRotation = () => {
