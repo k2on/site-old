@@ -88,6 +88,14 @@ function Phonk() {
                                 <h1 className="text-k2-green">40 roll</h1>
                             )}
                         </span>
+                        <h3 className="text-gray-400 text-sm">
+                            open in{" "}
+                            <img
+                                className="h-4 ml-1 inline-block grayscale"
+                                src="/spotify.svg"
+                                alt="Spotify"
+                            />
+                        </h3>
                     </div>
                 </div>
             </a>
