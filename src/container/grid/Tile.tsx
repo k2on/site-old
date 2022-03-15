@@ -9,7 +9,7 @@ function Tile(props: TileProps) {
         <div
             style={{ minHeight: "10rem" }}
             className={
-                "bg-white w-full col-span-1 " +
+                "bg-black w-full col-span-1 overflow-hidden " +
                 // I didn't want to do this but tailwind don't work without a nested thing.
                 (props.span === 6
                     ? "md:col-span-6"
