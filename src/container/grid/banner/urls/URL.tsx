@@ -10,7 +10,7 @@ function URL(props: URLProps) {
         <div
             onClick={() => props.setQRColor(props.color)}
             style={{ color: props.color }}
-            className="font-mono text-lg italic hover:font-bold"
+            className="font-mono text-lg italic hover:font-bold hover:cursor-pointer"
         >
             koon.dev
         </div>
