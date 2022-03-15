@@ -1,4 +1,5 @@
-import { Artist, Background } from "./types";
+import { Artist } from "./types";
+import { Background } from "../shared/types";
 
 export const artistsToBackgrounds = (
     url: string,

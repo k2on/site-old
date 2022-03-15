@@ -1,7 +1,7 @@
 import { useState } from "react";
 import QRCode from "./banner/QRCode";
 import URLs from "./banner/URLs";
-import Tile from "./Tile";
+import Tile from "./shared/Tile";
 
 function BannerTile() {
     const QR_DEFAULT_COLOR = "white";
