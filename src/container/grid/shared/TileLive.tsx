@@ -5,10 +5,7 @@ import { Background } from "./types";
 import { shuffleExcludeFirst } from "./util";
 
 interface TileLiveProps {
-    content?: (
-        isRotating: boolean,
-        state: Record<string, unknown>,
-    ) => React.ReactNode;
+    content?: (isRotating: boolean, seed: number) => React.ReactNode;
     children?: React.ReactNode;
     backgrounds: Background[];
 }
@@ -19,6 +16,7 @@ function TileLive(props: TileLiveProps) {
     const [timer, setTimer] = useState<NodeJS.Timer | null>(null);
     const [index, setIndex] = useState(0);
     const [backgrounds, setBackgrounds] = useState(props.backgrounds);
+    const [seed, setSeed] = useState(0);
 
     const rotate = () => {
         setIndex((state) => (state + 1) % props.backgrounds.length);
@@ -30,7 +28,10 @@ function TileLive(props: TileLiveProps) {
 
         setIsRotating(true);
 
-        setBackgrounds(shuffleExcludeFirst(backgrounds));
+        const newSeed = Math.random();
+        setSeed(newSeed);
+        const bgs = shuffleExcludeFirst(props.backgrounds, newSeed);
+        setBackgrounds(bgs);
     };
 
     const endRotation = () => {
@@ -51,7 +52,6 @@ function TileLive(props: TileLiveProps) {
 
     // @ts-ignore
     const t = transitions.map(({ item, props, key }) => {
-        console.log(key);
         return (
             <animated.div
                 key={key}
@@ -82,7 +82,7 @@ function TileLive(props: TileLiveProps) {
                 </div>
                 <div className="h-full absolute top-0 block w-full">
                     {props.content
-                        ? props.content(isRotating, { backgrounds })
+                        ? props.content(isRotating, seed)
                         : props.children}
                 </div>
             </div>
