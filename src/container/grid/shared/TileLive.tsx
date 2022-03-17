@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useTransition, animated, config } from "react-spring";
 import Tile from "./Tile";
 import { Background } from "./types";
+import { shuffleExcludeFirst } from "./util";
 
 interface TileLiveProps {
-    content?: (isRotating: boolean) => React.ReactNode;
+    content?: (isRotating: boolean, seed: number) => React.ReactNode;
     children?: React.ReactNode;
     backgrounds: Background[];
 }
@@ -14,6 +15,8 @@ function TileLive(props: TileLiveProps) {
     const [isRotating, setIsRotating] = useState(false);
     const [timer, setTimer] = useState<NodeJS.Timer | null>(null);
     const [index, setIndex] = useState(0);
+    const [backgrounds, setBackgrounds] = useState(props.backgrounds);
+    const [seed, setSeed] = useState(0);
 
     const rotate = () => {
         setIndex((state) => (state + 1) % props.backgrounds.length);
@@ -24,6 +27,11 @@ function TileLive(props: TileLiveProps) {
         setTimer(timer);
 
         setIsRotating(true);
+
+        const newSeed = Math.random();
+        setSeed(newSeed);
+        const bgs = shuffleExcludeFirst(props.backgrounds, newSeed);
+        setBackgrounds(bgs);
     };
 
     const endRotation = () => {
@@ -32,32 +40,29 @@ function TileLive(props: TileLiveProps) {
         setIndex(0);
 
         setIsRotating(false);
-        // state.isRotating = false;
     };
 
     // @ts-ignore
-    const transitions = useTransition(
-        props.backgrounds[index],
-        (item) => item.id,
-        {
-            from: { opacity: 0 },
-            enter: { opacity: 1 },
-            leave: { opacity: 0 },
-            config: config.molasses,
-        },
-    );
+    const transitions = useTransition(backgrounds[index], (item) => item.id, {
+        from: { opacity: 0 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+        config: config.molasses,
+    });
 
     // @ts-ignore
-    const t = transitions.map(({ item, props, key }) => (
-        <animated.div
-            key={key}
-            className="absolute top-0 left-0 w-full h-full bg-center bg-no-repeat bg-cover"
-            style={{
-                ...props,
-                backgroundImage: `url(${item.url})`,
-            }}
-        />
-    ));
+    const t = transitions.map(({ item, props, key }) => {
+        return (
+            <animated.div
+                key={key}
+                className="absolute top-0 left-0 w-full h-full bg-center bg-no-repeat bg-cover"
+                style={{
+                    ...props,
+                    backgroundImage: `url(${item.url})`,
+                }}
+            />
+        );
+    });
 
     return (
         <Tile>
@@ -76,7 +81,9 @@ function TileLive(props: TileLiveProps) {
                     {t}
                 </div>
                 <div className="h-full absolute top-0 block w-full">
-                    {props.content ? props.content(isRotating) : props.children}
+                    {props.content
+                        ? props.content(isRotating, seed)
+                        : props.children}
                 </div>
             </div>
         </Tile>

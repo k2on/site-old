@@ -3,16 +3,17 @@ import { getArtists } from "./phonk/artists";
 import { artistsToBackgrounds, artistsToTitles } from "./phonk/util";
 import { PLAYLIST_COVER_URL } from "./phonk/const";
 import TileLive, { TILE_LIVE_TIMEOUT } from "./shared/TileLive";
+import { shuffleExcludeFirst } from "./shared/util";
 
-const artists = getArtists();
-const backgrounds = artistsToBackgrounds(PLAYLIST_COVER_URL, artists);
-const artistTitles = artistsToTitles(artists);
+function TilePhonk() {
+    const artists = getArtists();
+    const backgrounds = artistsToBackgrounds(PLAYLIST_COVER_URL, artists);
+    const artistTitles = artistsToTitles(artists);
 
-function Phonk() {
     return (
         <TileLive
             backgrounds={backgrounds}
-            content={(isRotating) => (
+            content={(isRotating, seed) => (
                 <a
                     className="relative block w-full h-full"
                     href="https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ"
@@ -25,7 +26,10 @@ function Phonk() {
                             <span className="text-4xl font-bold">
                                 {isRotating ? (
                                     <TextLoop interval={TILE_LIVE_TIMEOUT}>
-                                        {artistTitles}
+                                        {shuffleExcludeFirst(
+                                            artistTitles,
+                                            seed,
+                                        )}
                                     </TextLoop>
                                 ) : (
                                     <h1 className="text-k2-green">40 roll</h1>
@@ -47,4 +51,4 @@ function Phonk() {
     );
 }
 
-export default Phonk;
+export default TilePhonk;

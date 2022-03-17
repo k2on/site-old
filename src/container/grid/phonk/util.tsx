@@ -13,8 +13,14 @@ export const artistsToBackgrounds = (
     );
 
 export const artistsToTitles = (artists: Artist[]): JSX.Element[] =>
-    [<span className="text-k2-green">40 roll</span>].concat(
+    [
+        <span className="text-k2-green" key="40-roll">
+            40 roll
+        </span>,
+    ].concat(
         artists.map((artist) => (
-            <span style={{ color: artist.color }}>{artist.title}</span>
+            <span key={artist.title} style={{ color: "#ff0066" }}>
+                {artist.title}
+            </span>
         )),
     );
