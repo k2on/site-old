@@ -3,7 +3,7 @@ import QRCode from "./banner/QRCode";
 import URLs from "./banner/URLs";
 import Tile from "./shared/Tile";
 
-function BannerTile() {
+function TileBanner() {
     const QR_DEFAULT_COLOR = "white";
     const [QRColor, setQRColor] = useState(QR_DEFAULT_COLOR);
     return (
@@ -22,4 +22,4 @@ function BannerTile() {
     );
 }
 
-export default BannerTile;
+export default TileBanner;
