@@ -7,7 +7,7 @@ function TileBanner() {
     const QR_DEFAULT_COLOR = "white";
     const [QRColor, setQRColor] = useState(QR_DEFAULT_COLOR);
     return (
-        <Tile span={4}>
+        <Tile span={6}>
             <div className="bg-black">
                 <div className="mx-auto bg-black w-fit">
                     <div className="flex overflow-hidden">
