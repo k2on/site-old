@@ -1,12 +1,18 @@
-import TileBanner from "./grid/Banner";
+import TileBlank from "./grid/Blank";
 import TilePhonk from "./grid/Phonk";
 
 function Grid() {
     return (
-        <div className="grid grid-cols-1 md:mt-6 md:gap-6 md:grid-cols-3 lg:grid-cols-6">
-            <TileBanner />
-            <TilePhonk />
-        </div>
+        <>
+            <div className="grid grid-cols-1 md:gap-6 md:grid-cols-6 lg:grid-cols-6">
+                <TilePhonk />
+                <TileBlank span={4} />
+                <TileBlank span={4} />
+                <TileBlank />
+                <TileBlank />
+                <TileBlank span={4} />
+            </div>
+        </>
     );
 }
 
