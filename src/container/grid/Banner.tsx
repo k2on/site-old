@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import QRCode from "./banner/QRCode";
 import URLs from "./banner/URLs";
 import Tile from "./shared/Tile";
@@ -12,7 +13,9 @@ function TileBanner() {
                 <div className="mx-auto bg-black w-fit">
                     <div className="flex overflow-hidden">
                         <div onClick={() => setQRColor(QR_DEFAULT_COLOR)}>
-                            <QRCode color={QRColor} />
+                            <Link to="/">
+                                <QRCode color={QRColor} />
+                            </Link>
                         </div>
                         <URLs setQRColor={setQRColor} />
                     </div>
