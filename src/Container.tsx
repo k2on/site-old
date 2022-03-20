@@ -8,7 +8,7 @@ import styles from "./posts/styles.md";
 
 function Container() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="mx-auto max-w-2xl ">
                 <div className="md:my-6">
                     <TileBanner />
