@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Grid from "./container/Grid";
 import TileBanner from "./container/Banner";
 import Post from "./container/Post";
