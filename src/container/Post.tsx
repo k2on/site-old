@@ -1,6 +1,8 @@
 import { marked } from "marked";
 import { useEffect } from "react";
 import { useState } from "react";
+import Tile from "./grid/shared/Tile";
+import "./post/styles.scss";
 
 interface PostProps {
     path: string;
@@ -14,11 +16,14 @@ function Post(props: PostProps) {
             .then((resp) => resp.text())
             .then((text) => setPostBody(text));
     });
+    const __html = marked.parse(postBody).replace(/<\/h\d>/g, "</h1><br/>");
     return (
-        <div
-            className="text-white"
-            dangerouslySetInnerHTML={{ __html: marked.parse(postBody) }}
-        ></div>
+        <Tile background="#222">
+            <div
+                className="text-white h-full py-2 px-4 post"
+                dangerouslySetInnerHTML={{ __html }}
+            ></div>
+        </Tile>
     );
 }
 

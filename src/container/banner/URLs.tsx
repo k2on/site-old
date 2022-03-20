@@ -5,7 +5,7 @@ import {
     K2_PURPLE,
     K2_RED,
     K2_YELLOW,
-} from "../../../theme";
+} from "../../theme";
 import { SetQRColor } from "./types";
 import URL from "./urls/URL";
 

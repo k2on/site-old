@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import QRCode from "./banner/QRCode";
 import URLs from "./banner/URLs";
-import Tile from "./shared/Tile";
+import Tile from "./grid/shared/Tile";
 
 function TileBanner() {
     const QR_DEFAULT_COLOR = "white";

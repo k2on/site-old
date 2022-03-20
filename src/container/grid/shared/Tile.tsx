@@ -1,14 +1,20 @@
 interface TileProps {
     span?: 2 | 3 | 4 | 6;
+    background?: string;
     children: React.ReactNode;
 }
 
 function Tile(props: TileProps) {
+    const DEFAULT_BACKGROUND_COLOR = "black";
+
+    const minHeight = "10rem";
+    const background = props.background || DEFAULT_BACKGROUND_COLOR;
+
     return (
         <div
-            style={{ minHeight: "10rem" }}
+            style={{ minHeight, background }}
             className={
-                "bg-black w-full col-span-1 overflow-hidden " +
+                "w-full col-span-1 overflow-hidden " +
                 // Nessesary for tailwind to include these classes, as nested turnary, in pruning
                 (props.span === 6
                     ? "md:col-span-6"
