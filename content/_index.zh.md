@@ -8,4 +8,4 @@
 
 ## 音乐 🎶
 
-听我的 Phonk 的歌单[![发现](https://img.shields.io/badge/发现-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
+给我的 Phonk 歌单一个点赞[![发现](https://img.shields.io/badge/发现-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
