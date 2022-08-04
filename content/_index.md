@@ -6,4 +6,6 @@ to my personal website.
 
 There is a [中文](https://zh.koon.dev) version of this site for my 说中文的朋友.
 
+## Music 🎶
+
 Listen to my phonk pl: [![Discover](https://img.shields.io/badge/Discover-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)

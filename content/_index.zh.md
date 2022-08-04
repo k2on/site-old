@@ -6,4 +6,6 @@
 
 我的中文很不好，因为英文是我的母语。如果你要看英文，你可以在[这里](https://koon.dev)
 
+## 音乐 🎶
+
 听我的 Phonk 的歌单[![发现](https://img.shields.io/badge/发现-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
