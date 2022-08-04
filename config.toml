@@ -1,0 +1,22 @@
+baseURL = 'https://koon.dev/'
+languageCode = 'en-us'
+title = 'koon.dev'
+theme = 'kugo'
+
+[params]
+    themeColor = "blue"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        title = "koon.dev"
+
+        [languages.en.params.logo]
+            logoText = "koon.dev"
+
+    [languages.zh]
+        languageName = "中文"
+        title = "K二技术"
+
+        [languages.zh.params.logo]
+            logoText = "K二技术"
