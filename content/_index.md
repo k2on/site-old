@@ -4,7 +4,7 @@
 
 Welcome to my personal website.
 
-There is a [中文](https://zh.koon.dev) version of this site for my 说中文的朋友.
+There is a [中文](https://koon.dev/zh) version of this site for my 说中文的朋友.
 
 ### 🎶 Music
 
