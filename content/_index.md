@@ -6,13 +6,17 @@ Welcome to my personal website.
 
 There is a [中文](https://koon.dev/zh) version of this site for my 说中文的朋友.
 
-### 🎶 Music
-
--   Give my phonk playlist a follow: [![Discover](https://img.shields.io/badge/Discover-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
-
 ### 📚 Literature
 
 -   Books I have consumed in my [Library](library)
+
+### 📹 Video
+
+-   My favorite videos on the internet in my [Theatre](theatre)
+
+### 🎶 Music
+
+-   Give my playlist a follow: [![Discover](https://img.shields.io/badge/Discover-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
 
 ### 👥 Social Media
 

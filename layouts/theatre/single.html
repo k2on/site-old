@@ -1,0 +1,10 @@
+{{ partial "header.html" . -}}
+<header><h1 id="tag_{{ .Title }}">{{ .Title | title }}</h1></header>
+<article>
+	{{ .Content }}
+	{{ range index $.Site.Data.theatre (lower $.Title) }}
+	<h2>{{ .name }}</h2>
+	{{ partial "videos.html" .videos }}
+	{{ end }}
+</article>
+{{- partial "footer.html" . }}

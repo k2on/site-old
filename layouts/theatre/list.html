@@ -1,0 +1,7 @@
+{{ partial "header.html" . -}}
+<header><h1 id="tag_{{ .Title }}">{{ .Title | title }}</h1></header>
+<article>
+	<img height="500px" alt="A Movie Theater" src="/theatre/banner.jpg"/>
+	{{ .Content }}
+</article>
+{{- partial "footer.html" . }}

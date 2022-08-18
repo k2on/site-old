@@ -6,13 +6,17 @@
 
 我的中文很不好，因为英文是我的母语。如果你要看英文，你可以在[这里](https://koon.dev)
 
-### 音乐 🎶
-
-给我的 Phonk 歌单一个点赞[![发现](https://img.shields.io/badge/发现-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
-
 ### 📚 书馆
 
 -   我看书了在 [书馆](library)
+
+### 📹 视频
+
+-   我的最喜欢的网络视频在 [剧院](theatre)
+
+### 音乐 🎶
+
+给我的歌单一个点赞[![发现](https://img.shields.io/badge/发现-40%20roll-purple?style=plastic&logo=Spotify&link=https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)](https://open.spotify.com/playlist/5LPiXbNeB2Cm6DrmX1DgLZ)
 
 ### 👥 社交媒体
 

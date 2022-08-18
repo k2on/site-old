@@ -4,7 +4,7 @@
     {{ .Content -}}
     <ul>
         {{- range.Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .Summary }}</li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .Summary | truncate 200 }}</li>
         {{ end -}}
     </ul>
 </article>
