@@ -1,0 +1,157 @@
+<!doctype html><html lang=en><head><title>| koon.dev</title><link rel=canonical href=https://koon.dev/><link rel=alternate type=application/rss+xml title="koon.dev RSS" href=/index.xml><link rel=stylesheet type=text/css href=/style.css><link rel=icon href=/favicon.ico><meta name=description content="Itempotent Local Music Library Over the past years I have been listening to music on many online services such as Spotify, YouTube and SoundCloud. They all have their pros and cons but I have relized the way to go forward is through MP3 files, let me explain why.
+Spotify Pros Cons * Mainstream music * Little underground music * Control playback from multiple devices * Strict copyright rules * Collaberative Playlists * Good metadata This is an example of a song in my playlist that was taken off the platform."><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index, follow"><meta charset=utf-8></head><body><main><header><h1></h1></header><article><h1 id=itempotent-local-music-library>Itempotent Local Music Library</h1><p>Over the past years I have been listening to music on many online services such as Spotify, YouTube and SoundCloud. They all have their pros and cons but I have relized the way to go forward is through MP3 files, let me explain why.</p><h2 id=spotify>Spotify</h2><table><thead><tr><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td>* Mainstream music</td><td>* Little underground music</td></tr><tr><td>* Control playback from multiple devices</td><td>* Strict copyright rules</td></tr><tr><td>* Collaberative Playlists</td><td></td></tr><tr><td>* Good metadata</td><td></td></tr></tbody></table><p><img src=/dev/music/unavailable-spotify.png alt="Example of a song taken off Spotify"></p><p>This is an example of a song in my playlist that was taken off the platform. This is my main gripe with Spotify and the final straw came when they removed all of <a href=https://soundcloud.com/kloudbug>kloudbug</a>&rsquo;s songs.</p><h2 id=youtube-and-soundsloud>YouTube and SoundSloud</h2><p>I am putting these in the same boat because they allow for anyone to upload music (or at least it is a lot easier than doing it on Spotify).</p><table><thead><tr><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td>* Underground music</td><td>* Music is 2nd to video on YouTube</td></tr><tr><td></td><td>* Usually full length albums/mixes</td></tr><tr><td></td><td>* Bad metadata</td></tr></tbody></table><p>There are many songs on SoundCloud and YouTube that are part of full length mixes and if you want to play a specific song you need to know the timestamp.</p><p><img src=/dev/music/vol-5-sc.png alt="Soundcloud Mix"></p><p>Here is the same mix but on Spotify, each track is seperated which allows you to put individual songs in playlists or share them with others.</p><p><img src=/dev/music/vol-5-spot.png alt="Same Album on Spotify"></p><h2 id=mp3s-and-wavs>MP3s and WAVs</h2><p>Over the past month I have been <em>legally</em> downloading MP3 and WAV files and directly transfering them to my cell phone. This allows for an offline library of thousands of songs that you have complete control over.</p><p>This is the same album put in the form of MP3s loaded into <a href=https://www.emacswiki.org/emacs/EMMS>EMMS</a>:</p><p><img src=/dev/music/vol-5-emms.png alt="Same Album in EMMS"></p><p>But if you&rsquo;re a boomer then you can use something like Apple&rsquo;s music app for playing local audio files.</p><p><img src=/dev/music/vol-5-apple.png alt="Same Album in Apple&amp;rsquo;s music app"></p><p>The great thing about having these files, rather than renting the ablity to stream them, is that you can back them up on a hard drive, sync them with your phone, burn them to a CD.</p><h2 id=the-problem>The Problem</h2><p>The problem comes with managing these files, and the files metadata. As of now I have been manually splitting MP3 and adding all the metadata.</p><p>I have been thinking about ways to automate this task and in the process, I think I have come up with a way of allowing people to share songs and playlists.</p><h2 id=my-idea>My Idea</h2><p>Using code to describe your music library.</p><h3 id=side-effects>Side Effects</h3><ul><li>Version Control</li><li>Share code with others</li><li>Online repositories of music</li></ul><h3 id=single-example>Single Example</h3><p>This is what <a href=https://soundcloud.com/menthalo666/dont-play-with-the-gang>Menthalo&rsquo;s Don&rsquo;t Play With The Gang</a> looks like:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>DON&#39;T PLAY WITH THE GANG</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Menthalo</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>genre</span>: <span style=color:#ae81ff>Phonk</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>duration</span>: <span style=color:#ae81ff>2</span>:<span style=color:#ae81ff>34</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>released</span>: <span style=color:#ae81ff>2020</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>https://soundcloud.com/menthalo666/dont-play-with-the-gang</span>
+</span></span><span style=display:flex><span>    - <span style=color:#ae81ff>https://www.youtube.com/watch?v=qSjg3oXILCw</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>samples</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>beat</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Linda Clifford, Only Fooling Myself</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>from</span>: <span style=color:#ae81ff>0</span>:<span style=color:#ae81ff>00</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>to</span>: <span style=color:#ae81ff>0</span>:<span style=color:#ae81ff>20</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>vocals</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Migos, Need It</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>from</span>: <span style=color:#ae81ff>1</span>:<span style=color:#ae81ff>43</span>
+</span></span></code></pre></div><h3 id=album-example>Album Example</h3><p>This example will be in YAML of the same album we have been looking at.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Holy Mob, Vol. 5</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>album-artist</span>: <span style=color:#ae81ff>Holy Mob</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#ae81ff>https://holymob.bandcamp.com/album/holy-mob-volume-5</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>full</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#ae81ff>https://soundcloud.com/holymob/volume5</span>
+</span></span><span style=display:flex><span>        - <span style=color:#ae81ff>https://www.youtube.com/watch?v=EqVpuKFoCzE</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>duration</span>: <span style=color:#ae81ff>41</span>:<span style=color:#ae81ff>06</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>genre</span>: <span style=color:#ae81ff>Phonk</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>released</span>: <span style=color:#ae81ff>02</span><span style=color:#ae81ff>/14/2018</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>tracks</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Play Your Cards Right</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Play Your Cards Right</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artists</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Von Storm</span>
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Caspian Rose</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/play-your-cards-right</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>0</span>:<span style=color:#ae81ff>00</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>samples</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>beat</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>The Dramatics, What You See Is What You Get</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>vocals</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Hard D, Play My Cards Right</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Yo Bitch a Fiend</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Yo Bitch a Fiend</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artists</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Inteus</span>
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Caspian Rose</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/yo-bitch-a-fiend</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>03</span>:<span style=color:#ae81ff>05</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Overdosed</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Overdosed</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Ponsuda</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>3</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/overdosed</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>07</span>:<span style=color:#ae81ff>35</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, More Than Me</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>More Than Me</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Caspian Rose</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/more-than-me</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>11</span>:<span style=color:#ae81ff>16</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>samples</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>vocals</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Gucci Mane, Break Dancin&#39;</span>
+</span></span><span style=display:flex><span>                <span style=color:#f92672>starts</span>: <span style=color:#ae81ff>0</span>:<span style=color:#ae81ff>40</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Pull That Trigga</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Pull That Trigga</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Von Storm</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/pull-that-trigga</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>14</span>:<span style=color:#ae81ff>41</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>samples</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Paul Martin, Le Troublant Témoignage De Paul Martin</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Demons In My Soul</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Demons In My Soul</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artists</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Inteus</span>
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Gali</span>
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Ponsuda</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>source</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>6</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/demons-in-my-soul</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>18</span>:<span style=color:#ae81ff>24</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Thirsty</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Thirsty</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Vedebe</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>7</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/thirsty</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>21</span>:<span style=color:#ae81ff>11</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Grigia</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Grigia</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artists</span>:
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>Inteus</span>
+</span></span><span style=display:flex><span>          - <span style=color:#ae81ff>l v k s</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>8</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/grigia</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>23</span>:<span style=color:#ae81ff>46</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Make a Move</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Make a Move</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Redhands</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>9</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/make-a-move</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>26</span>:<span style=color:#ae81ff>32</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Shyne</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Shyne</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Sheltr</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/shyne</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>29</span>:<span style=color:#ae81ff>35</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>samples</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>beat</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Lamont Dozier, Shine</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Lay It Down</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Lay It Down</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Gali</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>11</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/lay-it-down</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>32</span>:<span style=color:#ae81ff>38</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Overlords</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Overlords</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Necroez</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>12</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/overlords</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>34</span>:<span style=color:#ae81ff>57</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>id</span>: <span style=color:#ae81ff>Holy Mob, Take It to Myself</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Take It to Myself</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>artist</span>: <span style=color:#ae81ff>Inteus</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>sources</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>single</span>:
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>13</span>
+</span></span><span style=display:flex><span>              - <span style=color:#ae81ff>https://holymob.bandcamp.com/track/take-it-to-myself</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>full</span>: <span style=color:#ae81ff>37</span>:<span style=color:#ae81ff>16</span>
+</span></span></code></pre></div><div id=nextprev><a href=/library/ai-superpowers/><div id=nextart>Next:<br>Kaifu Lee, AI Superpowers</div></a></div></article></main><footer><a href=https://koon.dev/>https://koon.dev/</a><br><br><a href=/index.xml><img src=/rss.svg style=max-height:1.5em alt="RSS Feed" title="Subscribe via RSS for updates."></a></footer></body></html>
