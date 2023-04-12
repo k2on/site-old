@@ -1,5 +1,10 @@
+@font-face {
+    font-family: phont;
+    src: url("https://phonkhub.com/phont.otf");
+}
+
 body {
-    font-style: sans-serif;
+    font-family: phont;
     background: #000011;
     color: #ccc;
 }
@@ -11,6 +16,7 @@ main {
 
 img {
     max-width: 100%;
+    max-height: 300px;
 }
 
 header h1 {
