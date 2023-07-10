@@ -2,9 +2,13 @@
 
 There is a [中文](https://koon.dev/zh) version of this site for my 说中文的朋友.
 
-### Projects
+### My Current Project
 
--   [Elytra](https://elytra.to) - Ride management software, written in Rust
+-   [Elytra Rides](https://elytrarides.com) - Ride Management Software
+![Ride Software](https://i.imgur.com/fXqOxDB.png)
+
+### Other Projects
+
 -   [Phonkhub.com](https://phonkhub.com) - Frontend for the [PhonkDB](https://github.com/phonkhub/db), written in Rust
 
 ![Music Database](https://i.imgur.com/wKuVKjH.png)
