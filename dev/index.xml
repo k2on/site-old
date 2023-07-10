@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>koon.dev</title><link>https://koon.dev/dev/</link><description>Recent content in Devs on koon.dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://koon.dev/dev/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://koon.dev/dev/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://koon.dev/dev/music/</guid><description>&lt;h1 id="itempotent-local-music-library">Itempotent Local Music Library&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>koon.dev</title><link>https://koon.dev/dev/</link><description>Recent content in Devs on koon.dev</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://koon.dev/dev/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://koon.dev/dev/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://koon.dev/dev/music/</guid><description>&lt;h1 id="itempotent-local-music-library">Itempotent Local Music Library&lt;/h1>
 &lt;p>Over the past years I have been listening to music on many online services such as Spotify, YouTube and SoundCloud. They all have their pros and cons but I have relized the way to go forward is through MP3 files, let me explain why.&lt;/p>
 &lt;h2 id="spotify">Spotify&lt;/h2>
 &lt;table>
@@ -62,7 +62,7 @@
 &lt;p>This is the same album put in the form of MP3s loaded into &lt;a href="https://www.emacswiki.org/emacs/EMMS">EMMS&lt;/a>:&lt;/p>
 &lt;p>&lt;img src="https://koon.dev/dev/music/vol-5-emms.png" alt="Same Album in EMMS">&lt;/p>
 &lt;p>But if you&amp;rsquo;re a boomer then you can use something like Apple&amp;rsquo;s music app for playing local audio files.&lt;/p>
-&lt;p>&lt;img src="https://koon.dev/dev/music/vol-5-apple.png" alt="Same Album in Apple&amp;amp;rsquo;s music app">&lt;/p>
+&lt;p>&lt;img src="https://koon.dev/dev/music/vol-5-apple.png" alt="Same Album in Apple&amp;rsquo;s music app">&lt;/p>
 &lt;p>The great thing about having these files, rather than renting the ablity to stream them, is that you can back them up on a hard drive, sync them with your phone, burn them to a CD.&lt;/p>
 &lt;h2 id="the-problem">The Problem&lt;/h2>
 &lt;p>The problem comes with managing these files, and the files metadata. As of now I have been manually splitting MP3 and adding all the metadata.&lt;/p>
