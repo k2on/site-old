@@ -17,6 +17,14 @@ There is a [中文](https://koon.dev/zh) version of this site for my 说中文�
 
 ![Score Keeping](https://i.imgur.com/1dUsMsv.png)
 
+-   [Clemson.build](https://clemson.build) - A community for builders at Clemson University
+
+![Information about Clemson Build meeting](https://i.groupme.com/3248x2112.png.331f1ebe5f994aa1b7cad3d35b14e35d.large)
+
+-   [Clemson.chat](https://clemson.chat) - A chat interface to connect to various Clemson University sites and services
+
+![Chat Interface asking about library capacity](https://i.imgur.com/1VxRgOp.png)
+
 -   [CUFries.com](https://cufries.com) - A better Clemson University dining hall menu.
 
 ![Food Menu](https://i.imgur.com/uq1vnEL.png)
