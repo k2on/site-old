@@ -2,7 +2,10 @@
 
 There is a [中文](https://koon.dev/zh) version of this site for my 说中文的朋友.
 
-### My Current Project
+### My Current Projects
+
+-   [Sivrad](https://sivrad.com) - My AI assistant
+![AI interface](https://i.imgur.com/AnJuAe4.png)
 
 -   [Elytra Rides](https://elytrarides.com) - Ride Management Software
 ![Ride Software](https://i.imgur.com/fXqOxDB.png)
