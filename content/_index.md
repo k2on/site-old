@@ -33,6 +33,13 @@ There is a [中文](https://koon.dev/zh) version of this site for my 说中文�
 
 ![Food Menu](https://i.imgur.com/uq1vnEL.png)
 
+-   Interlock - Home automation software
+
+![Home automation control](https://i.imgur.com/DHJFe2D.jpg)
+
+-   PowerschoolPlus - A better frontend for Powerschool, calculating weighted GPA, showing upcoming classmates, how much time is left in a class, and more.
+
+
 ### Software
 
 -   [yar](/dev/music) - Local music library management.
